@@ -382,6 +382,19 @@ section {
     margin-top: 30px;
 }
 
+.hero-actions .button-outline {
+    color: var(--color-white);
+    border-color: rgba(255, 255, 255, .65);
+    background: rgba(255, 255, 255, .06);
+}
+
+.hero-actions .button-outline:hover,
+.hero-actions .button-outline:focus-visible {
+    color: var(--color-white);
+    border-color: var(--color-white);
+    background: rgba(255, 255, 255, .12);
+}
+
 .hero-benefits {
     width: min(680px, calc(100vw - 40px));
     max-width: none;
