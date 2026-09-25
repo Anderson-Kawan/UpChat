@@ -1,5 +1,21 @@
 # Upchat
 
+## Deploy na Vercel
+
+O projeto continua sendo executado localmente com ASP.NET Core, mas a Vercel
+publica a versão estática presente em `wwwroot`.
+
+Quando alterar uma view, inicie a aplicação e atualize o HTML estático:
+
+```bash
+dotnet run --urls http://127.0.0.1:5080
+./scripts/export-static.sh
+```
+
+Depois, envie `wwwroot/index.html` junto com as demais alterações. Na Vercel,
+importe o repositório normalmente; o arquivo `vercel.json` define `wwwroot`
+como diretório de saída e dispensa um comando de build.
+
 Site em ASP.NET Core MVC (.NET 10).
 
 ## Executar
