@@ -1,0 +1,24 @@
+<header class="site-header" id="siteHeader">
+    <div class="header-container">
+        <a class="brand" asp-controller="Home" asp-action="Index" aria-label="Brightlux - Página inicial">
+            <span class="brand-up">UP</span><span class="brand-chat">CHAT</span>
+        </a>
+        <nav class="main-navigation" aria-label="Navegação principal">
+            <a href="/#inicio" class="nav-link">Início</a>
+            <a href="/#plataforma" class="nav-link">Plataforma</a>
+            <a href="/#contato" class="nav-link">Parcerias</a>
+            <a href="/#integracoes" class="nav-link">Integrações</a>
+            <a href="/#sobrenos" class="nav-link">A UpChat</a>
+        </nav>
+        <a href="/#contato" class="header-cta"><span>Agende uma reunião</span><span class="cta-arrow">→</span></a>
+        <button class="mobile-menu-button" id="mobileMenuButton" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileNavigation">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <div class="mobile-navigation" id="mobileNavigation">
+        <a href="/#inicio">Início</a><a href="/#solucoes">Soluções</a><a href="/#engenharia">Engenharia</a>
+        <a asp-controller="Product" asp-action="Index">Produtos</a><a href="/#projetos">Projetos</a>
+        <a href="/#empresa">A UpChat</a><a href="/#sustentabilidade">Sustentabilidade</a>
+        <a href="/#contato" class="mobile-navigation-cta">Agende uma reunião <span>→</span></a>
+    </div>
+</header>
